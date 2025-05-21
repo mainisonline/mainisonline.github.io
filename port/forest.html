@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Forest – Emanuel Križić</title>
+  <style>
+    body {
+      background-color: #000;
+      color: #fff;
+      font-family: sans-serif;
+      margin: 2em auto;
+      max-width: 900px;
+      padding: 1em;
+      line-height: 1.6;
+    }
+    h1 {
+      font-size: 2em;
+      margin-bottom: 0.2em;
+    }
+    .subtitle {
+      font-style: italic;
+      color: #aaa;
+      margin-bottom: 1.5em;
+    }
+    h2 {
+      font-size: 1.2em;
+      margin-top: 2em;
+      color: #ccc;
+      border-bottom: 1px solid #444;
+      padding-bottom: 0.2em;
+    }
+    p {
+      margin-top: 0.5em;
+    }
+    a {
+      color: #66aaff;
+      text-decoration: none;
+    }
+    a:hover {
+      text-decoration: underline;
+    }
+    .soundcloud-container {
+      display: flex;
+      justify-content: center;
+      margin: 2em 0;
+    }
+    .soundcloud-container iframe {
+      max-width: 100%;
+      border: none;
+    }
+    .image-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 2em;
+      margin: 2em 0;
+    }
+    .image-grid figure {
+      margin: 0;
+    }
+    .image-grid img {
+      width: 100%;
+      height: auto;
+      display: block;
+      border-radius: 4px;
+    }
+    .image-grid figcaption {
+      text-align: center;
+      font-size: 0.9em;
+      color: #aaa;
+      margin-top: 0.5em;
+    }
+    @media (max-width: 700px) {
+      .image-grid {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <h1>Forest</h1>
+  <div class="subtitle">collaborative, live electronics, improvisation · year: 2023</div>
+  <p><em>Developed under the mentorship of Mag.art. Mag.rer.nat. Dr.phil. David Pirrò.</em></p>
+  <p><strong>Performed by:</strong> Zlata Zhidkova, Joseph Böhm, Max Reiner, Emanuel Križić</p>
+
+  <h2>Media</h2>
+  <div class="soundcloud-container">
+    <iframe width="100%" height="300" scrolling="no" frameborder="no" allow="autoplay"
+      src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/2098046808%3Fsecret_token%3Ds-eADAI4W4NLk&color=%23000000&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true">
+    </iframe>
+  </div>
+  <div style="font-size: 10px; color: #cccccc; line-break: anywhere; word-break: normal; overflow: hidden; white-space: nowrap; text-overflow: ellipsis; font-family: Interstate,Lucida Grande,Lucida Sans Unicode,Lucida Sans,Garuda,Verdana,Tahoma,sans-serif; font-weight: 100; text-align: center;">
+    <a href="https://soundcloud.com/major_e" title="ｍａｊｏｒ e" target="_blank" style="color: #cccccc; text-decoration: none;">ｍａｊｏｒ e</a> · 
+    <a href="https://soundcloud.com/major_e/forest/s-eADAI4W4NLk" title="Forest" target="_blank" style="color: #cccccc; text-decoration: none;">Forest</a>
+  </div>
+
+  <h2>Techniques</h2>
+  <p>C code running on Raspberry Pi. Each person created their unique program which runs a real-time audio processor using the JACK Audio Connection Kit audio server.</p>
+  <p>The output of my code creates a delay effect and frequency modulation. The delay effect creates an echo-like effect by combining the input audio with previously delayed samples. Frequency modulation alters tone using a LFO, which is applied to frequency dynamically.</p>
+
+  <div class="image-grid">
+    <figure>
+      <img src="images/forest_code_1.png" alt="Forest code 1">
+    </figure>
+    <figure>
+      <img src="images/forest_code_2.png" alt="Forest code 2">
+    </figure>
+    <figure>
+      <img src="images/forest_pic_1.jpeg" alt="Forest photo 1">
+    </figure>
+    <figure>
+      <img src="images/forest_pic_2.jpeg" alt="Forest photo 2">
+    </figure>
+  </div>
+
+  <p><a href="index.html">&larr; Back to Portfolio</a></p>
+
+</body>
+</html>

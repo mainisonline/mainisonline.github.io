@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>3.2.2024. – Emanuel Križić</title>
+  <style>
+    body {
+      background-color: #000;
+      color: #fff;
+      font-family: sans-serif;
+      margin: 2em auto;
+      max-width: 900px;
+      padding: 1em;
+      line-height: 1.6;
+    }
+    h1 {
+      font-size: 2em;
+      margin-bottom: 0.2em;
+    }
+    .subtitle {
+      font-style: italic;
+      color: #aaa;
+      margin-bottom: 1.5em;
+    }
+    h2 {
+      font-size: 1.2em;
+      margin-top: 2em;
+      color: #ccc;
+      border-bottom: 1px solid #444;
+      padding-bottom: 0.2em;
+    }
+    p {
+      margin-top: 0.5em;
+    }
+    a {
+      color: #66aaff;
+      text-decoration: none;
+    }
+    a:hover {
+      text-decoration: underline;
+    }
+    .soundcloud-container {
+      display: flex;
+      justify-content: center;
+      margin: 2em 0;
+    }
+    .soundcloud-container iframe {
+      max-width: 100%;
+      border: none;
+    }
+    .image-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 2em;
+      margin: 2em 0;
+    }
+    .image-grid figure {
+      margin: 0;
+    }
+    .image-grid img {
+      width: 100%;
+      height: auto;
+      display: block;
+      border-radius: 4px;
+    }
+    .image-grid figcaption {
+      text-align: center;
+      font-size: 0.9em;
+      color: #aaa;
+      margin-top: 0.5em;
+    }
+    @media (max-width: 700px) {
+      .image-grid {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <h1>3.2.2024.</h1>
+  <div class="subtitle">live recording, structured improvisation · year: 2024</div>
+
+  <p><em>Developed under the mentorship of Mag.art. Mag.phil. Mag.rer.nat. Daniel Mayer.</em></p>
+
+  <h2>Media</h2>
+  <div class="soundcloud-container">
+    <iframe width="100%" height="300" scrolling="no" frameborder="no" allow="autoplay"
+      src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/1737464772&color=%23000000&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true">
+    </iframe>
+  </div>
+  <div style="font-size: 10px; color: #cccccc; text-align: center; font-family: Interstate, Lucida Grande, Lucida Sans Unicode, Lucida Sans, Garuda, Verdana, Tahoma, sans-serif; font-weight: 100;">
+    <a href="https://soundcloud.com/major_e" title="ｍａｊｏｒ e" target="_blank" style="color: #cccccc; text-decoration: none;">ｍａｊｏｒ e</a> · 
+    <a href="https://soundcloud.com/major_e/32a" title="3.2.2024." target="_blank" style="color: #cccccc; text-decoration: none;">3.2.2024.</a>
+  </div>
+
+  <h2>Techniques</h2>
+  <p>An exciter is placed under a concert piano. The output of the transducer is additive synthesis, with parameters such as dynamic harmonic control, pitch shifting, and amplitude shaping controlled via a graphical user interface (GUI). The sound coming from the exciter is used to vibrate the body of the piano as well as the strings, creating a natural filter. The strength of the filter depends on the sustain pedal.</p>
+  <p>The results are picked up by two microphones placed at different resonating spots. The outputs of the microphones are then played through 24 speakers. The signal which is played through the speakers is spread and moved using vector-based amplitude panning (VBAP). Random motion and speed control is applied to the VBAP, which is controlled via the same GUI used for the synths. The same GUI is also used to change values of bit rate, sample rate and latency, which affect the output of the speakers.</p>
+  <p>Varying bit and sample rates result in different rhythmical structures. The rhythm also changes depending on the speed and spread of the panning. The final result is two varying sound sources: the combination of the piano and exciter, and the speakers. During live performance, this results in a slightly varying listening experience.</p>
+
+  <div class="image-grid">
+    <figure>
+      <img src="images/march_piano_1.jpg" alt="March Piano 1">
+    </figure>
+    <figure>
+      <img src="images/march_piano_2.jpg" alt="March Piano 2">
+    </figure>
+  </div>
+
+  <p><a href="index.html">&larr; Back to Portfolio</a></p>
+
+</body>
+</html>

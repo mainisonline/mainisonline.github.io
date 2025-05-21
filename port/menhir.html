@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Menhir – Emanuel Križić</title>
+  <style>
+    body {
+      background-color: #000;
+      color: #fff;
+      font-family: sans-serif;
+      margin: 2em auto;
+      max-width: 900px;
+      padding: 1em;
+      line-height: 1.6;
+    }
+    h1 {
+      font-size: 2em;
+      margin-bottom: 0.2em;
+    }
+    .subtitle {
+      font-style: italic;
+      color: #aaa;
+      margin-bottom: 1.5em;
+    }
+    h2 {
+      font-size: 1.2em;
+      margin-top: 2em;
+      color: #ccc;
+      border-bottom: 1px solid #444;
+      padding-bottom: 0.2em;
+    }
+    p {
+      margin-top: 0.5em;
+    }
+    a {
+      color: #66aaff;
+      text-decoration: none;
+    }
+    a:hover {
+      text-decoration: underline;
+    }
+    .soundcloud-container {
+      display: flex;
+      justify-content: center;
+      margin: 2em 0;
+    }
+    .soundcloud-container iframe {
+      max-width: 100%;
+      border: none;
+    }
+    .download {
+      text-align: center;
+      margin-top: 1.5em;
+    }
+    .download a {
+      display: inline-block;
+      background-color: #222;
+      color: #66aaff;
+      padding: 0.4em 0.9em;
+      font-size: 0.9em;
+      border-radius: 4px;
+      text-decoration: none;
+      border: 1px solid #444;
+    }
+    .image-grid {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 2em;
+      margin: 2em 0;
+    }
+    .image-grid figure {
+      margin: 0;
+    }
+    .image-grid img {
+      width: 50%;
+      height: auto;
+      display: block;
+      border-radius: 4px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+    .image-grid figcaption {
+      text-align: center;
+      font-size: 0.9em;
+      color: #aaa;
+      margin-top: 0.5em;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>Menhir</h1>
+  <div class="subtitle">live mixing with fixed media · year: 2023</div>
+  <p><em>Developed under the mentorship of Mag.art. Mag.phil. Mag.rer.nat. Daniel Mayer.</em></p>
+
+  <h2>Media</h2>
+  <div class="soundcloud-container">
+    <iframe width="100%" height="300" scrolling="no" frameborder="no" allow="autoplay"
+      src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/1545735793&color=%23000000&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true">
+    </iframe>
+  </div>
+  <div style="font-size: 10px; color: #cccccc; text-align: center; font-family: Interstate, Lucida Grande, Lucida Sans Unicode, Lucida Sans, Garuda, Verdana, Tahoma, sans-serif; font-weight: 100;">
+    <a href="https://soundcloud.com/major_e" title="ｍａｊｏｒ e" target="_blank" style="color: #cccccc; text-decoration: none;">ｍａｊｏｒ e</a> · 
+    <a href="https://soundcloud.com/major_e/menhir" title="Menhir" target="_blank" style="color: #cccccc; text-decoration: none;">Menhir</a>
+  </div>
+
+  <h2>Techniques</h2>
+  <p>SuperCollider was used for sound creation. Ableton was used for the live mixing with a USB controller as the input.</p>
+  <p>Some techniques include microvariation with randomization using randomizing functions, polyphonic detuning achieved with additive synthesis, envelope shaping, amplitude and frequency modulation, and spatialization using Splay and Balance2 for stereo imaging. Patterns were used to assemble and further develop sounds. After the code was finished, the various sounds were recorded and placed into Ableton for volume mixing.</p>
+
+  <div class="image-grid">
+    <figure>
+      <img src="images/menhir_controller.jpg" alt="Menhir controller">
+      <figcaption>MIDI controller color coded for live mixing</figcaption>
+    </figure>
+  </div>
+
+  <h2>Download</h2>
+  <div class="download">
+    <a href="supercollider/Menhir.scd" download>Download SuperCollider patch here</a>
+  </div>
+
+  <p><a href="index.html">&larr; Back to Portfolio</a></p>
+
+</body>
+</html>
